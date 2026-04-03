@@ -27,6 +27,11 @@ public class RentServiceRest {
         return carService.getCars();
     }
 
+    @GetMapping("/cars/count")
+    public int getCarCount(){
+        return carService.getCars().size();
+    }
+
     @GetMapping("/cars/{plateNumber}")
     public Car getCar(@PathVariable String plateNumber){
         return carService.getCar(plateNumber);
