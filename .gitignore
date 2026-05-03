@@ -28,3 +28,10 @@ __pycache__/
 *.pyo
 .pytest_cache/
 test-results.xml
+.coverage
+coverage.xml
+.venv/
+
+# Gradle
+MyService/build/
+MyService/.gradle/
